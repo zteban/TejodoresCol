@@ -890,10 +890,76 @@ a{
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
     
     <!-- ===== MAIN JS ===== -->
-    <script src="{{ asset('js/main.js')}}"></script>
+    <script>
+    /*===== EXPANDER MENU  =====*/ 
+        const showMenu = (toggleId, navbarId, bodyId)=>{
+        const toggle = document.getElementById(toggleId),
+        navbar = document.getElementById(navbarId),
+        bodypadding = document.getElementById(bodyId)
+
+        if(toggle && navbar){
+            toggle.addEventListener('click', ()=>{
+            navbar.classList.toggle('expander')
+
+            bodypadding.classList.toggle('body-pd')
+            })
+        }
+        }
+        showMenu('nav-toggle','navbar','body-pd')
+
+        /*===== LINK ACTIVE  =====*/ 
+        const linkColor = document.querySelectorAll('.nav__link')
+        function colorLink(){
+        linkColor.forEach(l=> l.classList.remove('active'))
+        this.classList.add('active')
+        }
+        linkColor.forEach(l=> l.addEventListener('click', colorLink))
+
+
+        /*===== COLLAPSE MENU  =====*/ 
+        const linkCollapse = document.getElementsByClassName('collapse__link')
+        var i
+
+        for(i=0;i<linkCollapse.length;i++){
+        linkCollapse[i].addEventListener('click', function(){
+            const collapseMenu = this.nextElementSibling
+            collapseMenu.classList.toggle('showCollapse')
+
+            const rotate = collapseMenu.previousElementSibling
+            rotate.classList.toggle('rotate')
+        })
+        }
+
+
+    </script>
    
     @yield('content')
-    <script src="{{ asset('js/likes.js')}}"></script>
+    <script>
+     for(i=29;i<1000;i++){
+ 
+  /*===== BOTON LIKES =====*/ 
+  const likeBtn = document.querySelector(".like__btn"+i);
+  let likeIcon = document.querySelector("#icon"+i)
+  let count31 = document.querySelector("#count"+i);
+  /*===== Funcion al Clickear boton =====*/ 
+  let clicked = false;
+  likeBtn.addEventListener("click",()=>{
+  if(!clicked){
+      clicked = true;
+      likeIcon.innerHTML = '<i class="fas fa-thumbs-up"></i>';
+      count31.textContent++;
+  }
+  else{
+      clicked = false;
+      likeIcon.innerHTML = '<i class="far fa-thumbs-up"></i>';
+      count31.textContent--;
+  }
+  });  
+
+}
+
+
+    </script>
   
 </body>
 
