@@ -10055,7 +10055,7 @@ h3 {
 
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register2') }}</a>
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register3') }}</a>
                                 </li>
                             @endif
                         @else
