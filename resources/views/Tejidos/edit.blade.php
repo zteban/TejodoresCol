@@ -30,7 +30,7 @@
                 </p>
             </form>  
         </div>
-        <img src="../../../public{{$Tejido->imagen}}" alt="" style = "width:100%;height:340px;margin-top:5rem;"/>
+        <img src="{{asset($tejido1->imagen)}}" alt="" style = "width:100%;height:340px;margin-top:5rem;"/>
     </div>
 @endsection
 

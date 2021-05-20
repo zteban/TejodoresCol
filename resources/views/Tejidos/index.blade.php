@@ -1,5 +1,5 @@
 @extends('layouts.plantilla')
-@section ('title','tejido1'.$Tejido)
+@section ('title','TejeCOL'.$Tejido)
 @section('content')
     <main class="mainPrincipal">
         <div class="dash-cards">

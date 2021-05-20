@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>TejeCol</title>
 
     <!-- Scripts -->
     <script src="{{asset('js/app.js')}}" defer></script>
@@ -83,7 +83,11 @@ body {
   line-height: 1.6;
   color: #212529;
   text-align: left;
-  background-color: #f8fafc;
+  background-size: cover;
+      background-repeat: no-repeat;
+      margin: 0;
+      height: 100vh;
+  background-image: url("fondo.jpg");
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -4368,6 +4372,8 @@ input[type=button].btn-block {
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
+  margin-top:80px;
+  opacity:.9;
 }
 .card > hr {
   margin-right: 0;
@@ -4390,6 +4396,7 @@ input[type=button].btn-block {
 .card > .card-header + .list-group,
 .card > .list-group + .card-footer {
   border-top: 0;
+  
 }
 
 .card-body {
@@ -4421,6 +4428,7 @@ input[type=button].btn-block {
 .card-header {
   padding: 0.75rem 1.25rem;
   margin-bottom: 0;
+  
   background-color: rgba(0, 0, 0, 0.03);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
@@ -10026,12 +10034,12 @@ h3 {
 
     </style>
 </head>
-<body>
+<body background="asset(fondo.jpg)">
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                   TejeCOL
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -10049,13 +10057,13 @@ h3 {
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Ingresar') }}</a>
                                 </li>
                             @endif
 
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register3') }}</a>
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Nuevo Usuario') }}</a>
                                 </li>
                             @endif
                         @else

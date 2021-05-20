@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+                <div class="card-header">{{ __('REGISTRARME COMO NUEVO USUARIO') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
@@ -134,14 +134,12 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="idActor" class="col-md-4 col-form-label text-md-right">{{ __('idActor') }}</label>
+                            <label for="idActor" class="col-md-4 col-form-label text-md-right">{{ __('¿Que quieres hacer?') }}</label>
                             <div class="col-md-6">
-                                <input id="idActor" type="text" class="form-control @error('idActor') is-invalid @enderror" name="idActor" value="{{ old('idActor') }}" required autocomplete="idActor" autofocus>
-                                @error('idActor')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
+                                <select class = "select form-control"  name="idActor" id="idActor">                          
+                                    <option value="2">Publicar mis tejidos</option>
+                                    <option value="3">Ver tejidos colombianos</option>
+                                </select>    
                             </div>
                         </div>
                         
@@ -153,7 +151,7 @@
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
+                                    {{ __('Guardar') }}
                                 </button>
                             </div>
                         </div>
