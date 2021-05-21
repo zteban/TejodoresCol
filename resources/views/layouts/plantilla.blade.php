@@ -65,6 +65,11 @@ ul {
     padding: 1rem;
   
 }
+.contact-form2 form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width:60%;
+}
 
 .contact-form {
     background: #222222;
@@ -76,8 +81,12 @@ ul {
 }
 
 .contact-form form label {
-    display: block;
+    
     color: #00a6ff;
+}
+#label2{
+   
+    color: #FFFFFF;
 }
 
 .contact-form form p {

@@ -8,7 +8,7 @@
                     <div class="card-body">
                         <div>
                             <h5>{{$tejido1->nombre}}</h5>
-                            <a href="{{route('tejido.edit',$tejido1)}}" ><img src="{{asset($tejido1->imagen)}}" alt="" class="image fit" /></a>
+                            <a href="{{route('tejido.informacion',$tejido1)}}" ><img src="{{asset($tejido1->imagen)}}" alt="" class="image fit" /></a>
                             <h4>{{$tejido1->created_at}}</h4>
                         </div>
                     

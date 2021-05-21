@@ -40,6 +40,7 @@ Route::get('Tejidos/crear', [TejidoController::class,'crear'])->name('tejido.cre
 Route::post('Tejidos', [TejidoController::class,'store'])->name('tejido.store');
 Route::get('Tejidos/{tejido}', [TejidoController::class,'show'])->name('tejido.show');
 Route::get('Tejidos/{tejido}/edit', [TejidoController::class,'edit'])->name('tejido.edit');
+Route::get('Tejidos/{tejido}/informacion', [TejidoController::class,'informacion'])->name('tejido.informacion');
 Route::put('Tejidos/{tejido}', [TejidoController::class,'update'])->name('tejido.update');
 Route::get('Tejidos/{tejido}/delete', [TejidoController::class,'delete'])->name('tejido.delete');
 Route::get('Tejidos/{tejido}/like', [TejidoController::class,'like'])->name('tejido.like');

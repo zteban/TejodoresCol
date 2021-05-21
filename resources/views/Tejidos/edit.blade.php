@@ -1,7 +1,7 @@
 @extends('layouts.plantilla')
 @section ('title','Modificar tejido')
 @section('content')
-    <h1 class="logo">Creacion de <span>Tejidos</span></h1>
+    <h1 class="logo">Modificar<span>Tejido</span></h1>
     <div class="contact-wrapper animated bounceInUp ">
         <div class="contact-form">
             <form action="{{route('tejido.update',$Tejido)}}" method='post'>
@@ -30,7 +30,7 @@
                 </p>
             </form>  
         </div>
-        <img src="{{asset($tejido1->imagen)}}" alt="" style = "width:100%;height:340px;margin-top:5rem;"/>
+        <img src="{{asset($Tejido->imagen)}}" alt="" style = "width:100%;height:340px;margin-top:5rem;"/>
     </div>
 @endsection
 

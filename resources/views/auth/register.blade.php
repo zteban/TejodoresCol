@@ -12,7 +12,7 @@
                         @csrf
 
                         <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
+                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Nombre') }}</label>
 
                             <div class="col-md-6">
                                 <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
@@ -26,7 +26,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('Correo Electronico') }}</label>
 
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
@@ -40,7 +40,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
+                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Contraseña') }}</label>
 
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
@@ -54,7 +54,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
+                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirmar Contraseña') }}</label>
 
                             <div class="col-md-6">
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
@@ -62,7 +62,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="documento" class="col-md-4 col-form-label text-md-right">{{ __('documento') }}</label>
+                            <label for="documento" class="col-md-4 col-form-label text-md-right">{{ __('Numero Documento') }}</label>
 
                             <div class="col-md-6">
                                 <input id="documento" type="text" class="form-control @error('documento') is-invalid @enderror" name="documento" value="{{ old('documento') }}" required autocomplete="documento" autofocus>
@@ -76,7 +76,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="tipoDoc" class="col-md-4 col-form-label text-md-right">{{ __('tipoDoc') }}</label>
+                            <label for="tipoDoc" class="col-md-4 col-form-label text-md-right">{{ __('Tipo Documento') }}</label>
 
                             <div class="col-md-6">
                                 <input id="tipoDoc" type="text" class="form-control @error('tipoDoc') is-invalid @enderror" name="tipoDoc" value="{{ old('tipoDoc') }}" required autocomplete="tipoDoc" autofocus>
@@ -90,7 +90,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="direccion" class="col-md-4 col-form-label text-md-right">{{ __('direccion') }}</label>
+                            <label for="direccion" class="col-md-4 col-form-label text-md-right">{{ __('Direccion') }}</label>
 
                             <div class="col-md-6">
                                 <input id="direccion" type="text" class="form-control @error('direccion') is-invalid @enderror" name="direccion" value="{{ old('direccion') }}" required autocomplete="direccion" autofocus>
@@ -105,7 +105,7 @@
 
 
                         <div class="form-group row">
-                            <label for="celular" class="col-md-4 col-form-label text-md-right">{{ __('celular') }}</label>
+                            <label for="celular" class="col-md-4 col-form-label text-md-right">{{ __('Celular') }}</label>
 
                             <div class="col-md-6">
                                 <input id="celular" type="text" class="form-control @error('celular') is-invalid @enderror" name="celular" value="{{ old('celular') }}" required autocomplete="celular" autofocus>
@@ -120,7 +120,7 @@
 
 
                         <div class="form-group row">
-                            <label for="ciudad" class="col-md-4 col-form-label text-md-right">{{ __('ciudad') }}</label>
+                            <label for="ciudad" class="col-md-4 col-form-label text-md-right">{{ __('Ciudad') }}</label>
 
                             <div class="col-md-6">
                                 <input id="ciudad" type="text" class="form-control @error('ciudad') is-invalid @enderror" name="ciudad" value="{{ old('ciudad') }}" required autocomplete="ciudad" autofocus>

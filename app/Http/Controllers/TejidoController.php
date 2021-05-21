@@ -74,6 +74,9 @@ class TejidoController extends Controller
     public function edit(Tejido $Tejido){  
         return view('Tejidos.edit',compact('Tejido'));
     }
+    public function informacion(Tejido $Tejido){  
+        return view('Tejidos.Informacion',compact('Tejido'));
+    }
     
 
     public function update(request $request,Tejido $tejido){
